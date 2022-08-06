@@ -1,0 +1,10 @@
+.settings__field {
+    @apply flex justify-center items-center mb-1
+}
+
+.settings__text {
+    @apply text-sm font-semibold leading-7 text-slate-900
+}
+.settings__input {
+    @apply max-w-[100px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-1 ml-2
+}

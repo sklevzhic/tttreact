@@ -1,0 +1,4 @@
+.cell {
+    @apply border w-8 h-8 text-xl shrink-0 text-center cursor-default pt-0.5
+    cursor-pointer hover:bg-gray-200 hover:text-opacity-50
+}

@@ -1,0 +1,7 @@
+.information__key {
+    @apply flex justify-center items-center
+}
+
+.information__value {
+    @apply text-sm font-semibold leading-7 text-slate-900
+}
