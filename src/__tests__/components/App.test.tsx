@@ -47,6 +47,7 @@ describe("App component", () => {
         let winSeriesInput = screen.getByPlaceholderText("Победная серия")
 
 
+
         fireEvent.change(sizeInput, {
             target: {value: "3"},
         });
