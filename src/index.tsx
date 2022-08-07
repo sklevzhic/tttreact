@@ -9,6 +9,8 @@ const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
 );
 
-root.render(<BoardProvider><App/></BoardProvider>);
+root.render(<BoardProvider>
+    <App/>
+</BoardProvider>);
 
 reportWebVitals();

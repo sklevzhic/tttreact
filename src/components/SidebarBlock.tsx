@@ -5,7 +5,7 @@ interface SidebarBlockProps {
     children: React.ReactNode
 }
 
-export const SidebarBlock: FC<SidebarBlockProps> = memo(({title,children}) => {
+export const SidebarBlock: FC<SidebarBlockProps> = memo(({title, children}) => {
     return <div className="flex-1 p-2 border m-2 text-center">
         <h6
             className="text-lg font-semibold leading-7 text-slate-900 pb-1 border-b">{title}</h6>

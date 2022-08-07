@@ -18,8 +18,9 @@ export const InputNumber: FC<InputNumberProps> = ({defaultValue, min, max, text,
     }
 
     return <div className="settings__field">
-        <p className="settings__text">{text}</p>
-        <input type="number" className="settings__input" placeholder="" value={defaultValue} min={min}
-               max={max} onBlur={validateSizes} onChange={setNewValue}/>
+        <label className="settings__text"><span>{text}</span>
+            <input type="number" className="settings__input" placeholder={text} value={defaultValue} min={min}
+                   max={max} onBlur={validateSizes} onChange={setNewValue}/>
+        </label>
     </div>
 }

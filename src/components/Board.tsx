@@ -1,7 +1,6 @@
-import React, { FC } from "react"
+import React, {FC, useContext} from "react"
 import {Cell} from "./Cell";
-import {ICell} from "../types/ICell";
-import {useBoardContext} from "../context/board";
+import {BoardContext, BoardContextInterface} from "../context/board";
 import {getCurrentFigure} from "../utils/getCurrentFigure";
 
 interface BoardProps {
@@ -9,10 +8,7 @@ interface BoardProps {
 }
 
 export const Board: FC<BoardProps> = React.memo(() => {
-    let {cells, isGame, step, setValueToCell} = useBoardContext()
-    const handlerCell = (cell: ICell) => {
-        setValueToCell(cell)
-    }
+    let {cells, isGame, step} = useContext(BoardContext) as BoardContextInterface
     return <div className={`wrapper flex flex-col ${!isGame && "opacity-50 pointer-events-none"}`}>
         {
             !isGame && <div
@@ -22,10 +18,10 @@ export const Board: FC<BoardProps> = React.memo(() => {
         }
         {
             cells.map((row, i) => {
-                return <div key={i} className="flex">
+                return <div key={i} className="flex row">
                     {
                         row.map((cell) => {
-                            return <Cell cell={cell} key={cell.id} handlerCell={handlerCell}/>
+                            return <Cell cell={cell} key={cell.id}/>
                         })
                     }
                 </div>
