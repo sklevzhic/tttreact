@@ -1,11 +1,9 @@
-import App from "../../components/App";
-import {BoardProvider} from "../../context/board";
 import {SidebarBlock} from "../../components/SidebarBlock";
-import { render } from "@testing-library/react";
+import {render} from "@testing-library/react";
 
-describe("Render component", () => {
+describe("Sidebar component", () => {
 
-    test('Render', () => {
+    test('should be rendered the component Sidebar', () => {
         let tempContainer = render(<SidebarBlock title={"TitleNew"}>
             <h1 className={"someclass"}>some text</h1>
         </SidebarBlock>)

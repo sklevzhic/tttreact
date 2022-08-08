@@ -473,25 +473,25 @@ describe("Should get values values from the line", () => {
     })
 })
 describe("should check elements of the line on availability win series", () => {
-    test("правильный 1", () => {
+    test("true 1", () => {
         expect(checkWinSeriesInLine([Figures.X, Figures.X, Figures.X, Figures.X, Figures.X, null, Figures.O, null, null], 5, Figures.X)).toBeTruthy()
     })
-    test("правильный 2", () => {
+    test("true 2", () => {
         expect(checkWinSeriesInLine([Figures.O, null, Figures.X, Figures.X, Figures.X, Figures.X, Figures.X, Figures.X, null, null, Figures.O, null], 5, Figures.X)).toBeTruthy()
     })
-    test("правильный 3", () => {
+    test("true 3", () => {
         expect(checkWinSeriesInLine([Figures.X, Figures.X, Figures.X, null, Figures.O, null, null, Figures.X, Figures.X, Figures.X, Figures.X, Figures.X,], 5, Figures.X)).toBeTruthy()
     })
-    test("правильный 4", () => {
+    test("true 4", () => {
         expect(checkWinSeriesInLine([Figures.O, Figures.O, Figures.O, Figures.O, Figures.O, null, null, null], 5, Figures.O)).toBeTruthy()
     })
-    test("неправильный 1", () => {
+    test("false 1", () => {
         expect(checkWinSeriesInLine([Figures.O, Figures.O, Figures.O, Figures.X, Figures.O, Figures.O, null, null, null], 5, Figures.O)).toBeFalsy()
     })
-    test("неправильный 2", () => {
+    test("false 2", () => {
         expect(checkWinSeriesInLine([Figures.O, Figures.O, null, Figures.O, Figures.X, Figures.O, Figures.O, null, null], 5, Figures.O)).toBeFalsy()
     })
-    test("неправильный 3", () => {
+    test("false 3", () => {
         expect(checkWinSeriesInLine([Figures.O, Figures.O, null, Figures.O, Figures.X, Figures.O, Figures.O, null, null], 5, Figures.O)).toBeFalsy()
     })
 })

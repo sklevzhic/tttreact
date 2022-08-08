@@ -3,8 +3,9 @@ import {render} from "@testing-library/react";
 
 describe("Input component", () => {
 
-    test('Render component', () => {
-        let tempContainer = render(<InputNumber text={"Title"} min={3} max={55} defaultValue={10} handlerNewValue={jest.fn}/>)
+    test('should be rendered the component Input', () => {
+        let tempContainer = render(<InputNumber text={"Title"} min={3} max={55} defaultValue={10}
+                                                handlerNewValue={jest.fn}/>)
         expect(tempContainer.getByText("Title")).toBeInTheDocument()
         expect(tempContainer.getByDisplayValue("10")).toBeInTheDocument()
         expect(tempContainer.getByDisplayValue("10")).toBeInTheDocument()
