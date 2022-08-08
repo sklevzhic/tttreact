@@ -48,7 +48,6 @@ export const BoardProvider = ({children}: AuxProps) => {
         setStep(0)
         setWinSeries(winSeriesNewGame)
     }
-
     const setValueToCell = (cell: ICell, figure: Figures = getCurrentFigure(step)) => {
         let newArr = cells
         newArr[cell.y][cell.x].value = figure
@@ -58,13 +57,11 @@ export const BoardProvider = ({children}: AuxProps) => {
             setIsGame(false)
         }
     }
-
     const setToLocalStorage = () => {
         let tempCells = isGame ? cells : initialBoard(size)
         let board: IBoard = {size, winSeries, winSeriesNewGame, cells: tempCells, step}
         localStorage.setItem("board", JSON.stringify(board))
     }
-
     const setDataFromLocalStorage = (data: string) => {
         let obj: IBoard = JSON.parse(data)
         setWinSeries(obj.winSeries)

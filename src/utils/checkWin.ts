@@ -9,6 +9,9 @@ import {ILine, ILines} from "../types/ILine";
 // Содержит ли хотя бы один маассив линий победную комбинацию
 
 export function checkWin(cells: ICell[][], cell: ICell, winSeries: number, figure: Figures): boolean {
+    // n   =   {x || y}
+    // d   =   {x || y} - i
+    // i   =   {x || y} + i
     let lines: ILines = {
         "vertical": {x: "n", y: "i", arr: []},
         "horizontal": {x: "i", y: "n", arr: []},
@@ -22,6 +25,7 @@ export function checkWin(cells: ICell[][], cell: ICell, winSeries: number, figur
     // Содержит ли хотя бы одна линия победную комбинацию
     return Object.keys(lines).some(key => checkWinSeriesInLine(lines[key].arr , winSeries, figure))
 }
+
 export function checkValuesInLine(cells: ICell[][], winSeries: number, cell: ICell, line: ILine) {
     let res = []
     for (let i = -winSeries + 1; i < winSeries; i++) {
@@ -33,6 +37,7 @@ export function checkValuesInLine(cells: ICell[][], winSeries: number, cell: ICe
     }
     return res
 }
+
 export function checkWinSeriesInLine(array: (Figures | null)[], winSeries: number, value: Figures): boolean {
     let count = 0
     for (let i = 0; i <= array.length - 1; i++ ) {

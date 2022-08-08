@@ -9,9 +9,9 @@ interface CellProps {
 }
 
 export const Cell: FC<CellProps> = memo(({cell}) => {
-    let { setValueToCell } = useBoardContext()
+    let {setValueToCell} = useBoardContext()
     return <div
-        onClick={() => setValueToCell(cell)}
+        onClick={!cell.value ? () => setValueToCell(cell) : () => {}}
         className={`cell
         ${cell.value === Figures.O ? "text-red-700" : ""} 
         ${cell.value === Figures.X ? "text-blue-700" : ""} 
