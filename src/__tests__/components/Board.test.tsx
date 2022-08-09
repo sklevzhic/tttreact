@@ -7,7 +7,7 @@ import {boardMock} from "../utils/checkWin.test";
 describe("Board component", () => {
     const contextValues = {cells: boardMock, isGame: true, step: 25};
 
-    test('should be rendered cells 8x8 with filled values 9-Х и 8-0', () => {
+    test('should render cells 8x8 with filled values 9-Х и 8-0', () => {
         let {getAllByText, container} = render(<BoardContext.Provider value={contextValues}>
             <Board/>
         </BoardContext.Provider>)

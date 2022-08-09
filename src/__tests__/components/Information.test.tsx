@@ -5,7 +5,7 @@ import {Information} from "../../components/Information";
 describe("Information component", () => {
 
 
-    test('should be rendered the component Information', () => {
+    test('should render the component Information', () => {
         let tempComponent = render(<BoardContext.Provider value={{step: 5, winSeries: 3}}>
             <Information/>
         </BoardContext.Provider>)

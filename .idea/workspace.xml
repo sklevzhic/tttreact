@@ -2,22 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7ae03b1-2da1-4b7f-9acc-49d351c08594" name="Changes" comment="fix tests">
-      <change afterPath="$PROJECT_DIR$/src/__tests__/components/Modal.test.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/__tests__/context/board.test.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Modal.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__tests__/components/App.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/__tests__/components/App.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/__tests__/components/Board.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/__tests__/components/Board.test.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/__tests__/components/Cell.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/__tests__/components/Cell.test.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/__tests__/components/Information.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/__tests__/components/Information.test.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/__tests__/components/Input.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/__tests__/components/Input.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/__tests__/components/Modal.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/__tests__/components/Modal.test.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/__tests__/components/Settings.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/__tests__/components/Settings.test.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/__tests__/components/SitebarBlock.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/__tests__/components/SitebarBlock.test.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__tests__/utils/checkWin.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/__tests__/utils/checkWin.test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Board.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cell.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cell.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cell.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cell.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/context/board.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/board.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/checkWin.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/checkWin.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

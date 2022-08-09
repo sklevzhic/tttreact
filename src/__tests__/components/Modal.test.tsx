@@ -4,7 +4,7 @@ import {Modal} from "../../components/Modal";
 
 describe("Modal component", () => {
 
-    test('should be rendered the modal component', () => {
+    test('should render the modal component', () => {
         let values = {
             step: 12,
             handlerNewGame: jest.fn()

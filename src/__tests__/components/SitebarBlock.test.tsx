@@ -3,7 +3,7 @@ import {render} from "@testing-library/react";
 
 describe("Sidebar component", () => {
 
-    test('should be rendered the component Sidebar', () => {
+    test('should render the component Sidebar', () => {
         let tempContainer = render(<SidebarBlock title={"TitleNew"}>
             <h1 className={"someclass"}>some text</h1>
         </SidebarBlock>)

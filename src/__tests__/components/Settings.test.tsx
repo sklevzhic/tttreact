@@ -4,7 +4,7 @@ import {Settings} from "../../components/Settings";
 
 describe("Settings component", () => {
 
-    test('should be rendered the component Settings', () => {
+    test('should render the component Settings', () => {
         let values = {
             size: 25,
             setSize: jest.fn(),
